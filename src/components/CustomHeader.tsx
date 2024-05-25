@@ -8,7 +8,7 @@ import { Link } from 'expo-router';
 import { BlurView } from 'expo-blur';
 import Colors from '../../constants/Colors';
 
-const CustomHeader = () => {
+export const CustomHeader = () => {
   const { top } = useSafeAreaInsets();
 
   return (
@@ -108,4 +108,3 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-export default CustomHeader;
