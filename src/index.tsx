@@ -6,7 +6,25 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Link } from 'expo-router';
 import { BlurView } from 'expo-blur';
-import Colors from '../constants/Colors';
+// import Colors from '../constants/Colors';
+
+interface Colors {
+  primary: string;
+  primaryMuted: string;
+  background: string;
+  dark: string;
+  gray: string;
+  lightGray: string;
+}
+
+const Colors: Colors = {
+  primary: '#3D38ED',
+  primaryMuted: '#C9C8FA',
+  background: '#F5F5F5',
+  dark: '#141518',
+  gray: '#626D77',
+  lightGray: '#D8DCE2',
+};
 
 const CustomHeader = () => {
   const { top } = useSafeAreaInsets();
